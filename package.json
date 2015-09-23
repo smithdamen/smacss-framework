@@ -1,0 +1,19 @@
+{
+  "name": "smacss-framework",
+  "version": "1.0.0",
+  "description": "Scalable and modular responsive CSS framework for web design",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smithdamen/smacss-framework.git"
+  },
+  "author": "Damen Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smithdamen/smacss-framework/issues"
+  },
+  "homepage": "https://github.com/smithdamen/smacss-framework#readme"
+}
