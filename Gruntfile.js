@@ -2,54 +2,52 @@ module.exports = function(grunt) {
   
   require('jit-grunt')(grunt);
   
+  require('load-grunt-tasks')(grunt);
+  
   grunt.initConfig({
     
-    build: {
+    pkg: grunt.file.readJSON('package.json'),
       
-      sass: {
-        build: {
-          options: {
-            style: 'expanded'
-          },
-          files: {
-          'build/src/css/main.css': 'src/sass/main.sass'
-          }
-        }
-      },
-      
-      cssmin: {
-        target: {
-          files: {
-            src: ['build/src/css/main.css', 'build/src/css/theme.css'],
-            dest: 'build/src/css',
-            ext: '.min.css'
-          }
-        }
-      },
-      
-      concat: {
-        options: {
-          separator: ';',
-        },
-        build: {
-          src: ['src/js/*.js'],
-          dest: 'build/src/js/main.js',
-        },
-      },
-      
-      uglify: {
-        options: {
-          mangle: false
-        },
+    sass: {
+      dist: {
         files: {
-          'build/src/js/main.js': ['src/js/main.js']
+          "build/src/css/main.css": "src/sass/main.scss"
+        }
+      }
+    },
+      
+    concat: {
+      options: {
+        separator: ";",
+      },
+      build: {
+        src: ['src/js/*.js'],
+        dest: "build/src/js/main.js",
+      },
+    },
+      
+    uglify: {
+      options: {
+        mangle: false
+      },
+      files: {
+        "build/src/js/main.js": ['src/js/main.js']
+      }
+    },
+    
+    watch: {
+      styles: {
+        files: ['src/sass/**/*.scss'],
+        tasks: ['sass'],
+        options: {
+          nospawn: true
         }
       }
     }
     
   });
   
-  grunt.registerTask('default', ['']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
   grunt.registerTask('build', ['sass', 'concat', 'cssmin', 'uglify']);
   
 };
