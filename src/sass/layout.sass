@@ -1,4 +1,5 @@
 @import base
+@import variables
 
 /************ BASE LAYOUT PROPERTIES ************/
 
@@ -32,6 +33,65 @@
   padding: 1em
   margin: 8px
   text-align: center
+  
+.title-section
+  width: 90%
+  padding: 50px 0
+  vertical-align: middle
+  margin: 50px 0
+  
+.banner
+  height: 300px
+  background: $banner-background
+  background-repeat: no-repeat
+  vertical-align: middle
+  text-transform: uppercase
+
+.banner-fullscreen
+  height: 100vh
+  
+  .container, .container-fluid
+    height: 100%
+
+
+.text-left
+  text-align: left
+
+.centered
+  display: inline-block
+  vertical-align: middle
+
+.light
+  color: $light-color
+  
+.text-center
+  text-align: center
+  
+  &:before
+    content: " "
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+
+.footer
+  min-height: 50px
+  text-align: center
+  line-height: 50px
+  
+  p
+    font-size: 16px
+
+.footer-dark
+  background-color: $primary-color
+  
+  p
+    color: $light-color
+
+.footer-light
+  background-color: $light-color
+  
+  p
+    color: $primary-text-color
 
 
 /************ BASE COLUMN WIDTHS ************/
