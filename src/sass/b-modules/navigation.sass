@@ -1,0 +1,77 @@
+.navigation
+  width: 100%
+  border-radius: 0
+  vertical-align: middle
+  display: inline-block
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  
+  nav
+    min-height: 50px
+  
+  .navbar-brand
+    padding: 5px
+    
+    .nav-logo
+      float: right
+      border: 0
+      
+  .nav-light
+    background-color: $light-color
+    
+    .navbar-link
+      color: $primary-text-color
+  
+  .nav-dark
+    background-color: $primary-color
+    
+    .navbar-link
+      color: $light-color
+  
+  .nav-fixed
+    width: 100%
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 999
+  
+  .navbar-list
+    list-style-type: none
+    position: relative
+    margin: 0
+    padding: 0
+    
+    .navbar-item
+      display: inline-block
+      *display: inline
+      zoom: 1
+      vertical-align: middle
+      position: relative
+      margin: 0
+      padding: 0
+      height: 100%
+      
+      .navbar-link
+        display: block
+        position: relative
+        padding: 10px 15px
+        text-decoration: none
+        cursor: pointer
+        margin-top: 2px
+  
+  .nav-right
+    
+    .navbar
+      float: right
+    
+    .navbar-brand
+      float: left
+
+  .nav-left
+    
+    .navbar
+      float: left
+    
+    .navbar-brand
+      float: right

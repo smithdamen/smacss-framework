@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
       
     sass: {
-      dist: {
+      build: {
         files: {
           "build/src/css/main.css": "src/sass/main.scss"
         }
