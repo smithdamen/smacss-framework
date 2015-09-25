@@ -51,3 +51,9 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['sass', 'concat', 'uglify']);
   
 };
+
+//  TODO
+//    * add version control management
+//    * add version numbering system
+//    * add javascript management system
+//    * add full build and dist functions for version control
