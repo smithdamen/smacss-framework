@@ -1,0 +1,45 @@
+//  used for adding a border radius to any side of a box
+//
+//  example:
+//
+//  .box {
+//    @include border-radius(5px);
+//  }
+//
+//  .box {
+//    @include border-top-radus(5px);
+//  }
+//
+//
+//  border
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+//  border top
+
+@mixin border-top-radius($radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+//  border right
+
+@mixin border-right-radius($radius) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+//  border bottom
+
+@mixin border-bottom-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+//  border left
+
+@mixin border-left-radius($radius) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}

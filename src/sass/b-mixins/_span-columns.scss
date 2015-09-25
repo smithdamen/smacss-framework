@@ -1,0 +1,34 @@
+//  first attempt at building a column-sizer
+//
+//  example:
+//
+//  .box {
+//    @include span-columns(12);
+//  }
+//
+//  .box {
+//    @include span-columns(3, 4, 6, 12);
+//  }
+//
+//
+//  span-columns
+
+@mixin span-columns($default, $lg: $default, $md: $default, $sm: $default, $xs: $default) {
+  width: $default * 8.33333%;
+  
+  @media screen and (min-width: 1100px) {
+    width: $lg * 8.33333%;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1099px) {
+    width: $md * 8.33333%;
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: $sm * 8.33333%;
+  }
+  
+  @media screen and (max-width: 479px) {
+    width: $xs * 8.33333%;
+  }
+}

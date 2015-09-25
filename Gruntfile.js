@@ -48,6 +48,6 @@ module.exports = function(grunt) {
   });
   
   grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
-  grunt.registerTask('build', ['sass', 'concat', 'cssmin', 'uglify']);
+  grunt.registerTask('build', ['sass', 'concat', 'uglify']);
   
 };

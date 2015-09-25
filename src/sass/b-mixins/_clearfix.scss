@@ -1,0 +1,18 @@
+//  used to clearfix containers with floated elements
+//
+//  example:
+//
+//  .box {
+//    @include clearfix;
+//  }
+//
+//
+//  clearfix
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}
