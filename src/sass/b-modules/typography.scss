@@ -1,0 +1,24 @@
+//  used to set default typefaces
+//
+//  example:
+//
+//  .box {
+//    font-family: $helvetica;
+//  }
+//
+//
+//  Georgia
+
+$georgia: "Georgia", "Cambria", "Times New Roman", serif;
+
+//  Helvetica
+
+$helvetica: "Helvetical Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+
+//  Monospace
+
+$monospace: "Bitstream Vera Sans Mono", "Courier", monospace;
+
+//  Verdana
+
+$verdana: "Verdana", "Geneva", sans-serif;
