@@ -24,14 +24,28 @@ module.exports = function(grunt) {
         src: ['src/js/*.js'],
         dest: "build/src/js/main.js",
       },
+      dist: {
+        src: ['build/src/js/*.js'],
+        dest: "dist/src/js/main.js",
+      }
     },
       
     uglify: {
-      options: {
-        mangle: false
+      build: {
+        options: {
+          mangle: false
+        },
+        files: {
+          "build/src/js/main.js": ['src/js/main.js']
+        }
       },
-      files: {
-        "build/src/js/main.js": ['src/js/main.js']
+      dist: {
+        options: {
+          mang: false
+        },
+        files: {
+          "dist/src/js/main.js": ['build/src/js/main.js']
+        }
       }
     },
     
@@ -43,12 +57,25 @@ module.exports = function(grunt) {
           nospawn: true
         }
       }
+    },
+    
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'build/src/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist/src/css',
+          ext: '.min.css'
+        }]
+      }
     }
     
   });
   
   grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
-  grunt.registerTask('build', ['sass', 'concat', 'uglify']);
+  grunt.registerTask('build', ['sass', 'concat:build', 'uglify:build']);
+  grunt.registerTask('dist', ['sass', 'concat:dist', 'uglify:dist', 'cssmin']);
   
 };
 

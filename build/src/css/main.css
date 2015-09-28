@@ -360,7 +360,8 @@ html {
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -918,6 +919,7 @@ video {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  border: none;
   background-color: #ffffff; }
   .box:before, .box:after {
     content: " ";

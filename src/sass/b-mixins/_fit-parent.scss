@@ -1,0 +1,15 @@
+//  used to make an element fit the size of its parent
+//
+//  example:
+//
+//  .box {
+//    @include fit-parent;
+//  }
+//
+//
+//  fit-parent
+
+@mixin fit-parent {
+  width: 100%;
+  box-sizing: border-box;
+}
