@@ -50,9 +50,23 @@ module.exports = function(grunt) {
     },
     
     watch: {
-      styles: {
-        files: ['src/sass/**/*.scss'],
+      sass: {
+        files: ['src/sass/**/*.scss', 'src/sass/**/*.sass'],
         tasks: ['sass'],
+        options: {
+          nospawn: true
+        }
+      },
+      css: {
+        files: ['build/src/css/**/*.css'],
+        tasks: ['cssmin'],
+        options: {
+          nospawn: true
+        }
+      },
+      js: {
+        files: ['src/js/**/*.js'],
+        tasks: ['concat', 'uglify'],
         options: {
           nospawn: true
         }
