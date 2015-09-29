@@ -1,3 +1,33 @@
+//  New nav
+
+$nav-height: 50px
+
+.navigation
+  min-height: $nav-height
+  width: 100%
+  vertical-align: middle
+  
+  .container
+    height: $nav-height
+  
+  .nav-logo
+    +text-hide
+    background:
+      // image: $nav-logo
+      repeat: no-repeat
+      position: center
+      size: contain
+  
+.navigation.light
+  color: $nav-text
+  background-color: $nav-background
+  
+.navigation.dark
+  color: $nav-dark-text
+  background-color: $nav-dark-background
+  
+
+//  Old nav
 .navigation
   width: 100%
   border-radius: 0

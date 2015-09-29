@@ -1,0 +1,16 @@
+//  used for making text disappear
+//
+//  example:
+//
+//  .box {
+//    @include text-hide;
+//  }
+//
+//
+//  text-hide
+
+@mixin text-hide {
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 101%;
+}

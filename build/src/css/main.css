@@ -865,6 +865,28 @@ video {
     background: none; }
 
 .navigation {
+  min-height: 50px;
+  width: 100%;
+  vertical-align: middle; }
+  .navigation .container {
+    height: 50px; }
+  .navigation .nav-logo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 101%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+
+.navigation.light {
+  color: #33658a;
+  background-color: #ffffff; }
+
+.navigation.dark {
+  color: #d64d13;
+  background-color: #d64d13; }
+
+.navigation {
   width: 100%;
   border-radius: 0;
   vertical-align: middle;
