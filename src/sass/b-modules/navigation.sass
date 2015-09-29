@@ -6,17 +6,39 @@ $nav-height: 50px
   min-height: $nav-height
   width: 100%
   vertical-align: middle
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  display: inline-block
   
   .container
     height: $nav-height
   
   .nav-logo
     +text-hide
+    padding: 5px
     background:
       // image: $nav-logo
       repeat: no-repeat
       position: center
       size: contain
+      
+  .nav-menu, ul
+    list-style-type: none
+    position: relative
+    
+    .nav-menu-item, li
+      display: inline-block
+      vertical-align: middle
+      margin: 0
+      padding: 0
+      height: 100%
+      
+      .nav-menu-link, a
+        display: block
+        padding: 10px 15px
+        text-decoration: none
+        cursor: pointer
   
 .navigation.light
   color: $nav-text
