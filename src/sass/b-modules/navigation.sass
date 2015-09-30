@@ -1,18 +1,17 @@
 //  New nav
 
-$nav-height: 50px
-
 .navigation
+  +horizontal-menu
   min-height: $nav-height
+  background: $nav-background
   width: 100%
-  vertical-align: middle
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
   display: inline-block
   
-  .container
+  ul, .nav-menu ul, ul.nav-menu
     height: $nav-height
+    
+  li, .nav-menu li, li.nav-menu-item
+    line-height: $nav-height
   
   .nav-logo
     +text-hide
@@ -22,23 +21,6 @@ $nav-height: 50px
       repeat: no-repeat
       position: center
       size: contain
-      
-  .nav-menu, ul
-    list-style-type: none
-    position: relative
-    
-    .nav-menu-item, li
-      display: inline-block
-      vertical-align: middle
-      margin: 0
-      padding: 0
-      height: 100%
-      
-      .nav-menu-link, a
-        display: block
-        padding: 10px 15px
-        text-decoration: none
-        cursor: pointer
   
 .navigation.light
   color: $nav-text
@@ -50,80 +32,80 @@ $nav-height: 50px
   
 
 //  Old nav
-.navigation
-  width: 100%
-  border-radius: 0
-  vertical-align: middle
-  display: inline-block
-  box-sizing: border-box
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
+// .navigation
+//   width: 100%
+//   border-radius: 0
+//   vertical-align: middle
+//   display: inline-block
+//   box-sizing: border-box
+//   -webkit-box-sizing: border-box
+//   -moz-box-sizing: border-box
   
-  nav
-    min-height: 50px
+//   nav
+//     min-height: 50px
   
-  .navbar-brand
-    padding: 5px
+//   .navbar-brand
+//     padding: 5px
     
-    .nav-logo
-      float: right
-      border: 0
+//     .nav-logo
+//       float: right
+//       border: 0
       
-  .nav-light
-    // background-color: $light-color
+//   .nav-light
+//     // background-color: $light-color
     
-    .navbar-link
-      // color: $primary-text-color
+//     .navbar-link
+//       // color: $primary-text-color
   
-  .nav-dark
-    // background-color: $primary-color
+//   .nav-dark
+//     // background-color: $primary-color
     
-    .navbar-link
-      // color: $light-color
+//     .navbar-link
+//       // color: $light-color
   
-  .nav-fixed
-    width: 100%
-    position: fixed
-    top: 0
-    right: 0
-    z-index: 999
+//   .nav-fixed
+//     width: 100%
+//     position: fixed
+//     top: 0
+//     right: 0
+//     z-index: 999
   
-  .navbar-list
-    list-style-type: none
-    position: relative
-    margin: 0
-    padding: 0
+//   .navbar-list
+//     list-style-type: none
+//     position: relative
+//     margin: 0
+//     padding: 0
     
-    .navbar-item
-      display: inline-block
-      *display: inline
-      zoom: 1
-      vertical-align: middle
-      position: relative
-      margin: 0
-      padding: 0
-      height: 100%
+//     .navbar-item
+//       display: inline-block
+//       *display: inline
+//       zoom: 1
+//       vertical-align: middle
+//       position: relative
+//       margin: 0
+//       padding: 0
+//       height: 100%
       
-      .navbar-link
-        display: block
-        position: relative
-        padding: 10px 15px
-        text-decoration: none
-        cursor: pointer
-        margin-top: 2px
+//       .navbar-link
+//         display: block
+//         position: relative
+//         padding: 10px 15px
+//         text-decoration: none
+//         cursor: pointer
+//         margin-top: 2px
   
-  .nav-right
+//   .nav-right
     
-    .navbar
-      float: right
+//     .navbar
+//       float: right
     
-    .navbar-brand
-      float: left
+//     .navbar-brand
+//       float: left
 
-  .nav-left
+//   .nav-left
     
-    .navbar
-      float: left
+//     .navbar
+//       float: left
     
-    .navbar-brand
-      float: right
+//     .navbar-brand
+//       float: right

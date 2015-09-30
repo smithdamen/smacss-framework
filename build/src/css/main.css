@@ -866,14 +866,44 @@ video {
 
 .navigation {
   min-height: 50px;
+  background: #ffffff;
   width: 100%;
-  vertical-align: middle; }
-  .navigation .container {
+  display: inline-block; }
+  .navigation nav, .navigation .navigation {
+    width: 100%;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: middle; }
+    .navigation nav:before, .navigation nav:after, .navigation .navigation:before, .navigation .navigation:after {
+      content: " ";
+      display: table; }
+    .navigation nav:after, .navigation .navigation:after {
+      clear: both; }
+  .navigation ul, .navigation .nav-menu ul, .navigation ul.nav-menu {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0; }
+  .navigation li, .navigation .nav-menu li, .navigation li.nav-menu-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    overflow: hidden;
+    height: 100%; }
+  .navigation li a, .navigation .nav-menu a, .navigation a.nav-menu-link {
+    text-decoration: none;
+    cursor: pointer; }
+  .navigation ul, .navigation .nav-menu ul, .navigation ul.nav-menu {
     height: 50px; }
+  .navigation li, .navigation .nav-menu li, .navigation li.nav-menu-item {
+    line-height: 50px; }
   .navigation .nav-logo {
     white-space: nowrap;
     overflow: hidden;
     text-indent: 101%;
+    padding: 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; }
@@ -885,57 +915,6 @@ video {
 .navigation.dark {
   color: #d64d13;
   background-color: #d64d13; }
-
-.navigation {
-  width: 100%;
-  border-radius: 0;
-  vertical-align: middle;
-  display: inline-block;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-  .navigation nav {
-    min-height: 50px; }
-  .navigation .navbar-brand {
-    padding: 5px; }
-    .navigation .navbar-brand .nav-logo {
-      float: right;
-      border: 0; }
-  .navigation .nav-fixed {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999; }
-  .navigation .navbar-list {
-    list-style-type: none;
-    position: relative;
-    margin: 0;
-    padding: 0; }
-    .navigation .navbar-list .navbar-item {
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      vertical-align: middle;
-      position: relative;
-      margin: 0;
-      padding: 0;
-      height: 100%; }
-      .navigation .navbar-list .navbar-item .navbar-link {
-        display: block;
-        position: relative;
-        padding: 10px 15px;
-        text-decoration: none;
-        cursor: pointer;
-        margin-top: 2px; }
-  .navigation .nav-right .navbar {
-    float: right; }
-  .navigation .nav-right .navbar-brand {
-    float: left; }
-  .navigation .nav-left .navbar {
-    float: left; }
-  .navigation .nav-left .navbar-brand {
-    float: right; }
 
 .box {
   width: 100%;
