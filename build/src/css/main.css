@@ -938,4 +938,22 @@ video {
     height: auto;
     overflow: hidden; }
 
+.banner {
+  min-height: 300px;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  background: #33658a; }
+  .banner:before, .banner:after {
+    content: " ";
+    display: table; }
+  .banner:after {
+    clear: both; }
+  .banner .banner-content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 /*# sourceMappingURL=main.css.map */
