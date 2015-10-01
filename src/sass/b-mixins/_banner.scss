@@ -1,0 +1,18 @@
+//  used to create a banner for header content
+//
+//
+//  example:
+//
+//  .banner {
+//    @include vertical-align(500px);
+//  }
+//
+//
+//  banner
+
+@mixin banner($height: 400px) {
+  min-height: 300px;
+  height: $height;
+  width: 100%;
+  text-align: center;
+}

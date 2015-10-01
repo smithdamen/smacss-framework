@@ -1,0 +1,44 @@
+//  Base properties for horizontal menus
+//
+//
+//  example:
+//
+//  .nav {
+//    @include horizontal-menu
+//  }
+//
+//
+//  horizontal menu
+
+@mixin horizontal-menu {
+  nav, .navigation {
+    @include clearfix;
+    width: 100%;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: middle;
+    
+  }
+  
+  ul, .nav-menu ul, ul.nav-menu {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li, .nav-menu li, li.nav-menu-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  li a, .nav-menu a, a.nav-menu-link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
