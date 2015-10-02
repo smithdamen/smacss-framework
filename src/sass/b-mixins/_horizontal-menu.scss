@@ -19,7 +19,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     vertical-align: middle;
-    
   }
   
   ul, .nav-menu ul, ul.nav-menu {
@@ -35,6 +34,7 @@
     zoom: 1;
     overflow: hidden;
     height: 100%;
+    text-align: right;
   }
   
   li a, .nav-menu a, a.nav-menu-link {

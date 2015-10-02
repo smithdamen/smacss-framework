@@ -3,17 +3,15 @@
 .navigation
   +horizontal-menu
   min-height: $nav-height
-  background: $nav-background
+  background: $nav-bg
   width: 100%
   display: inline-block
   
-  ul, .nav-menu ul, ul.nav-menu
-    height: $nav-height
-    
-  li, .nav-menu li, li.nav-menu-item
-    line-height: $nav-height
-  
   .nav-logo
+    float: left
+    padding: 5px
+    width: $nav-height
+    height: $nav-height
     +text-hide
     padding: 5px
     background:
@@ -21,15 +19,109 @@
       repeat: no-repeat
       position: center
       size: contain
+      
+  .nav-menu
+    float: right
+    height: $nav-height
   
-.navigation.light
+    ul, .nav-menu ul, ul.nav-menu
+      height: $nav-height
+    
+      li, .nav-menu li, li.nav-menu-item
+        $line-height: $nav-height
+        line-height: $line-height
+    
+        a, .nav-link, a.nav-link
+          $link-padding: $nav-height / 4
+          padding: $link-padding 15px
+          
+.nav-default
   color: $nav-text
-  background-color: $nav-background
+  background-color: $nav-bg
+  border: $nav-border
   
-.navigation.dark
+  .nav-logo
+    border: $nav-logo-border
+    
+  .nav-menu
+    border: $nav-menu-border
+    
+  a
+    color: $nav-link
+    background-color: $nav-link-bg
+    border: $nav-link-border
+    
+    &:hover
+      color: $nav-link-hover
+      background-color: $nav-link-hover-bg
+      border: $nav-link-hover-border
+      $link-padding: $nav-height / 4
+      padding: $link-padding - ($nav-border-width * 2) 15px
+      
+    &:active
+      color: $nav-link-active
+      background-color: $nav-link-active-bg
+      border: $nav-link-active-border
+      $link-padding: $nav-height / 4
+      padding: $link-padding - ($nav-border-width * 2) 15px
+  
+.nav-light
+  color: $nav-light-text
+  background-color: $nav-light-bg
+  
+  .nav-logo
+    border: $nav-light-logo-border
+    
+  .nav-menu
+    border: $nav-light-menu-border
+    
+  a
+    color: $nav-light-link
+    background-color: $nav-light-link-bg
+    border: $nav-light-link-border
+    
+    &:hover
+      color: $nav-light-link-hover
+      background-color: $nav-light-link-hover-bg
+      border: $nav-light-link-hover-border
+      $link-padding: $nav-height / 4
+      padding: $link-padding - ($nav-border-width * 2) 15px
+      
+    &:active
+      color: $nav-light-link-active
+      background-color: $nav-light-link-active-bg
+      border: $nav-light-link-active-border
+      $link-padding: $nav-height / 4
+      padding: $link-padding - ($nav-border-width * 2) 15px
+  
+.nav-dark
   color: $nav-dark-text
-  background-color: $nav-dark-background
+  background-color: $nav-dark-bg
   
+  .nav-logo
+    border: $nav-dark-logo-border
+    
+  .nav-menu
+    border: $nav-dark-menu-border
+    
+  a
+    color: $nav-dark-link
+    background-color: $nav-dark-link-bg
+    border: $nav-dark-link-border
+    
+    &:hover
+      color: $nav-dark-link-hover
+      background-color: $nav-dark-link-hover-bg
+      border: $nav-dark-link-hover-border
+      $link-padding: $nav-height / 4
+      padding: $link-padding - ($nav-border-width * 2) 15px
+      
+    &:active
+      color: $nav-dark-link-active
+      background-color: $nav-dark-link-active-bg
+      border: $nav-dark-link-active-border
+      $link-padding: $nav-height / 4
+      padding: $link-padding - ($nav-border-width * 2) 15px
 
 //  Old nav
 // .navigation
@@ -109,3 +201,6 @@
     
 //     .navbar-brand
 //       float: right
+
+
+  
