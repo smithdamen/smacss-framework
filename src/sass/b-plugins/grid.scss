@@ -13,7 +13,6 @@
 //  general properties
 
 [class*='col-'] {
-  width: 100%;
   float: left;
   min-height: 1px;
 }
@@ -64,23 +63,4 @@
 
 .col-12 {
   @include span-columns(12);
-}
-
-//  content container
-
-@mixin container($max-width) {
-  @include clearfix;
-  width: 100%;
-  max-width: $max-width;
-  margin: 0 auto;
-  position: relative;
-}
-
-//  max-width container
-
-@mixin container-fluid {
-  @include clearfix;
-  min-width: 100%;
-  margin: 0 auto;
-  position: relative;
 }

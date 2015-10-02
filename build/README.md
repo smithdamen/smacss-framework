@@ -2,9 +2,24 @@
 
 #### Current Build
 
-Box Version 0.0.2
+Box Version 0.0.3
 
 ##### Description
+
+Created additional modules and mixins for creating layouts. Expanded upon colors variable system to account for state-based color changes. These will serve as the default styles that reference the color scheme stylesheet. Colors are easily distributed throughout the entire project by simply changing the values stored in the color scheme.
+
+##### Updates
+
+* Modified 12 column grid system
+* Fixed an astonishing amount of bugs
+* Added mixins: banner, container, full-width, horizontal-menu, text-center, text-hide, vertical-align
+* Modified colors and borders variables
+* Added modules: banner, container, navigation, title-section
+* Added template.html with some examples of base modules
+
+## Previous Builds
+
+##### Box Version 0.0.2
 
 Created a 12 column grid system and some initial mixins to help with layout of websites. The file structure and base modules have been added and will continue to be worked on.
 
@@ -18,9 +33,6 @@ Created a 12 column grid system and some initial mixins to help with layout of w
 * Added modules: box, typography
 * Added base styles and base layout files
 * Added base files for future modules
- 
-
-## Previous Builds
 
 ##### Box Version 0.0.1
 

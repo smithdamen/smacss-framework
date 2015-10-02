@@ -1,0 +1,6 @@
+@mixin full-width {
+  @include clearfix;
+  min-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
