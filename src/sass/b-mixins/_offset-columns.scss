@@ -1,0 +1,32 @@
+//  used to offset a column by a number of columns
+//
+//  example:
+//
+//  .box {
+//    @include span-columns(6);
+//    @include offset-columns(3);
+//  }
+//  this will center a box that is 6 columns wide by offsetting it by 3
+//
+//
+//  offset-columns
+
+@mixin offset-columns($default, $lg: $default, $md: $default, $sm: $default, $xs: $default) {
+  margin-left: $default * 8.33333%;
+  
+  @media screen and (min-width: 1100px) {
+    margin-left: $lg * 8.33333%;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1099px) {
+    margin-left: $md * 8.33333%;
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-left: $sm * 8.33333%;
+  }
+  
+  @media screen and (max-width: 479px) {
+    margin-left: $xs * 8.33333%;
+  }
+}

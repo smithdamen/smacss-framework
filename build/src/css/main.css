@@ -577,11 +577,6 @@ h1, h2, h3, h4, h5, h6, p {
 
   .col-12-xs {
     width: 100%; } }
-/************ BASE LAYOUT PROPERTIES *********** */
-.col {
-  padding: 1em;
-  margin: 8px; }
-
 .container {
   width: 100%;
   max-width: 1100px;
