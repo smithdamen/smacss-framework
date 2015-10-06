@@ -64,3 +64,203 @@
 .col-12 {
   @include span-columns(12);
 }
+
+@media (min-width: 320px) {
+  .xs-1 {
+    @include span-columns(1);
+  }
+
+  .xs-2 {
+    @include span-columns(2);
+  }
+
+  .xs-3 {
+    @include span-columns(3);
+  }
+
+  .xs-4 {
+    @include span-columns(4);
+  }
+
+  .xs-5 {
+    @include span-columns(5);
+  }
+  
+  .xs-6 {
+    @include span-columns(6);
+  }
+
+  .xs-7 {
+    @include span-columns(7);
+  }
+
+  .xs-8 {
+    @include span-columns(8);
+  }
+
+  .xs-9 {
+    @include span-columns(9);
+  }
+
+  .xs-10 {
+    @include span-columns(10);
+  }
+
+  .xs-11 {
+    @include span-columns(11);
+  }
+
+  .xs-12 {
+    @include span-columns(12);
+  }
+}
+
+@media (min-width: 480px) {
+  .sm-1 {
+    @include span-columns(1);
+  }
+
+  .sm-2 {
+    @include span-columns(2);
+  }
+
+  .sm-3 {
+    @include span-columns(3);
+  }
+
+  .sm-4 {
+    @include span-columns(4);
+  }
+
+  .sm-5 {
+    @include span-columns(5);
+  }
+  
+  .sm-6 {
+    @include span-columns(6);
+  }
+
+  .sm-7 {
+    @include span-columns(7);
+  }
+
+  .sm-8 {
+    @include span-columns(8);
+  }
+
+  .sm-9 {
+    @include span-columns(9);
+  }
+
+  .sm-10 {
+    @include span-columns(10);
+  }
+
+  .sm-11 {
+    @include span-columns(11);
+  }
+
+  .sm-12 {
+    @include span-columns(12);
+  }
+}
+
+@media (min-width: 768px) {
+  .md-1 {
+    @include span-columns(1);
+  }
+
+  .md-2 {
+    @include span-columns(2);
+  }
+
+  .md-3 {
+    @include span-columns(3);
+  }
+
+  .md-4 {
+    @include span-columns(4);
+  }
+
+  .md-5 {
+    @include span-columns(5);
+  }
+  
+  .md-6 {
+    @include span-columns(6);
+  }
+
+  .md-7 {
+    @include span-columns(7);
+  }
+
+  .md-8 {
+    @include span-columns(8);
+  }
+
+  .md-9 {
+    @include span-columns(9);
+  }
+
+  .md-10 {
+    @include span-columns(10);
+  }
+
+  .md-11 {
+    @include span-columns(11);
+  }
+
+  .md-12 {
+    @include span-columns(12);
+  }
+}
+
+@media (min-width: 1100px) {
+  .lg-1 {
+    @include span-columns(1);
+  }
+
+  .lg-2 {
+    @include span-columns(2);
+  }
+
+  .lg-3 {
+    @include span-columns(3);
+  }
+
+  .lg-4 {
+    @include span-columns(4);
+  }
+
+  .lg-5 {
+    @include span-columns(5);
+  }
+  
+  .lg-6 {
+    @include span-columns(6);
+  }
+
+  .lg-7 {
+    @include span-columns(7);
+  }
+
+  .lg-8 {
+    @include span-columns(8);
+  }
+
+  .lg-9 {
+    @include span-columns(9);
+  }
+
+  .lg-10 {
+    @include span-columns(10);
+  }
+
+  .lg-11 {
+    @include span-columns(11);
+  }
+
+  .lg-12 {
+    @include span-columns(12);
+  }
+}

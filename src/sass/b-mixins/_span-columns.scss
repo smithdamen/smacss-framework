@@ -15,7 +15,6 @@
 
 @mixin span-columns($default, $lg: $default, $md: $default, $sm: $default, $xs: $default) {
   width: $default * 8.33333%;
-  padding: .5em;
   
   @media screen and (min-width: 1100px) {
     width: $lg * 8.33333%;

@@ -1,6 +1,19 @@
 footer, .footer, #footer
   min-height: $footer-height
   width: 100%
+  background-color: $footer-bg
   
-footer.full-width, .footer.full-width, #footer.full-width
-  +full-width
+  .footer-content
+    line-height: $footer-height
+    text-align: center
+    color: $footer-text
+  
+  &.full-width
+    +full-width
+    
+  &.dark
+    background-color: $footer-dark-bg
+    
+    .footer-content
+      color: $footer-dark-text
+  

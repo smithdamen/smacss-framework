@@ -1,0 +1,51 @@
+//  Style Guide
+
+//  Images
+$sg-logo: url('https://d13yacurqjgara.cloudfront.net/users/231260/screenshots/2250229/untitled-1.jpg')
+$sg-banner-bg: url('https://d13yacurqjgara.cloudfront.net/users/6084/screenshots/2234833/uptownbloom.png')
+$sg-banner-gradient: linear-gradient(135deg, rgba(51,101,138,0.5) 0%,rgba(33,33,33,0.5) 100%)
+$sg-thumb-1: url('https://d13yacurqjgara.cloudfront.net/users/6084/screenshots/2277803/thewinds3_1x.png')
+$sg-thumb-2: url('https://d13yacurqjgara.cloudfront.net/users/279740/screenshots/2267408/social-brands-icons-dribbble_1x.png')
+$sg-thumb-3: url('https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/2259391/coa_1x.png')
+$sg-thumb-4: url('https://d13yacurqjgara.cloudfront.net/users/224537/screenshots/2251915/waveloch-dribbble_1x.jpg')
+
+//  Colors
+$sg-text: $primary-text-color
+$sg-secondary-text: $secondary-text-color
+$sg-light-text: $light-color
+
+
+//  Font Styles
+
+$sg-font-family: sans-serif
+
+
+.sg-banner
+  // background: $sg-banner-bg no-repeat cover, -webkit-linear-gradient(315deg, rgba(51,101,138,0.5) 0%, rgba(33,33,33,0.5) 100%)
+  // background: $sg-banner-bg, linear-gradient(135deg, rgba(51,101,138,0.5) 0%,rgba(33,33,33,0.5) 100%)
+  +background-image($sg-banner-bg, $sg-banner-gradient)
+    
+.sg-thumb
+  width: 100%
+  height: 200px
+
+.sg-banner, .sg-thumb-1, .sg-thumb-2, .sg-thumb-3, .sg-thumb-4
+  background:
+    size: cover
+    repeat: no-repeat
+    
+.sg-thumb-1
+  background:
+    image: $sg-thumb-1
+    
+.sg-thumb-2
+  background:
+    image: $sg-thumb-2
+    
+.sg-thumb-3
+  background:
+    image: $sg-thumb-3
+    
+.sg-thumb-4
+  background:
+    image: $sg-thumb-4
