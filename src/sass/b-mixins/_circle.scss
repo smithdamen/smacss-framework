@@ -1,0 +1,19 @@
+//  used to make something a circle
+//
+//
+//  example
+//
+//  .box {
+//    @include circle(200px, $primary-color)
+//  }
+//
+//
+//  circle
+
+@mixin circle($size, $background) {
+  width: $size;
+  height: $size;
+  border-radius: $size / 2;
+  background-color: $background;
+  background-clip: padding-box;
+}
