@@ -1,0 +1,38 @@
+//  used to make a button display properly in any context
+//
+//
+//  example:
+//
+//  .box-btn {
+//    @include button(100%, center);
+//    color: blue;
+//    background-color: white;
+//    border: 2px solid blue;
+//  }
+//
+//
+//  Button
+
+@mixin button($width, $position) {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  $margin: 2%;
+  margin: $margin;
+  padding: 0.5em 1em;
+  width: $width - ($margin * 2);
+  font-family: inherit;
+  font-size: 100%;
+  text-decoration: none;
+  text-align: $position;
+}

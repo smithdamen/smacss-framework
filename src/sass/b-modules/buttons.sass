@@ -1,40 +1,173 @@
-.box-btn
-  display: inline-block
-  line-height: normal
-  vertical-align: middle
-  text-align: center
-  cursor: pointer
-  -webkit-user-drag: none
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
+.box-btn, a.box-btn, button
+  
+  &.full-width
+    +button(100%, center)
+  
+  &.left
+    +button(50%, left)
     
-  font-family: inherit
-  font-size: 100%
-  padding: 0.5em 1em
-  text-decoration: none
-  border-radius: 2px
+  &.right
+    +button(50%, right)
+  
+  &:disabled
+    cursor: not-allowed
+    opacity: 0.40
+    -khtml-opacity: 0.40
+    -moz-opacity: 0.40
     
-  .btn-primary, a.btn-primary
+  &.btn-primary, &a.btn-primary
     // color: $primary-color
     // background-color: $light-color
     // border: 1px solid $primary-color
-    
-  .btn-secondary, a.btn-secondary
-    // color: $accent-color
-    // background-color: $light-color
-    // border: 1px solid $accent-color
-    
-  .btn-transparent-light
-    // color: $light-color
-    background: none
-    // border: 1px solid $light-color
+    &.light
+      color: $btn-primary-light-text
+      background: none
+      background-color: $btn-primary-light-bg
+      border: $btn-primary-light-border
       
-  .btn-transparent-dark
-    // color: $accent-color
-    background: none
-    // border: 1px solid $accent-color
+      &:hover
+        color: $btn-primary-light-hover-text
+        background: none
+        background-color: $btn-primary-light-hover-bg
+        border: $btn-primary-light-hover-border
+        
+      &:active, &:focus
+        color: $btn-primary-light-active-text
+        background: none
+        background-color: $btn-primary-light-active-bg
+        border: $btn-primary-light-active-border
+    
+    &.dark
+      color: $btn-primary-dark-text
+      background: none
+      background-color: $btn-primary-dark-bg
+      border: $btn-primary-dark-border
+      
+      &:hover
+        color: $btn-primary-dark-hover-text
+        background: none
+        background-color: $btn-primary-dark-hover-bg
+        border: $btn-primary-dark-hover-border
+        
+      &:active, &:focus
+        color: $btn-primary-dark-active-text
+        background: none
+        background-color: $btn-primary-dark-active-bg
+        border: $btn-primary-dark-active-border
+    
+//   &.btn-secondary, &a.btn-secondary
+//     // color: $accent-color
+//     // background-color: $light-color
+//     // border: 1px solid $accent-color
+//     &.light
+//       color:
+//       background: none
+//       background-color:
+//       border:
+      
+//       &:hover
+//         color:
+//         background: none
+//         background-color:
+//         border:
+        
+//       &:active, &:focus
+//         color:
+//         background: none
+//         background-color:
+//         border:
+    
+//     &.dark
+//       color:
+//       background: none
+//       background-color:
+//       border:
+      
+//       &:hover
+//         color:
+//         background: none
+//         background-color:
+//         border:
+        
+//       &:active, &:focus
+//         color:
+//         background: none
+//         background-color:
+//         border:
+
+// &.btn-alert, &a.btn-alert
+//     // color: $accent-color
+//     // background-color: $light-color
+//     // border: 1px solid $accent-color
+//     &.light
+//       color:
+//       background: none
+//       background-color:
+//       border:
+      
+//       &:hover
+//         color:
+//         background: none
+//         background-color:
+//         border:
+        
+//       &:active, &:focus
+//         color:
+//         background: none
+//         background-color:
+//         border:
+    
+//     &.dark
+//       color:
+//       background: none
+//       background-color:
+//       border:
+      
+//       &:hover
+//         color:
+//         background: none
+//         background-color:
+//         border:
+        
+//       &:active, &:focus
+//         color:
+//         background: none
+//         background-color:
+//         border:
+    
+//   &.btn-transparent
+//     &.light
+//       // color: $light-color
+//       background: none
+//       background-color:
+//       // border: 1px solid $light-color
+      
+//       &:hover
+//         color:
+//         background: none
+//         background-color:
+//         border:
+        
+//       &:active, &:focus
+//         color:
+//         background: none
+//         background-color:
+//         border:
+      
+//     &.dark
+//       // color: $accent-color
+//       background: none
+//       background-color:
+//       // border: 1px solid $accent-color
+      
+//       &:hover
+//         color:
+//         background: none
+//         background-color:
+//         border:
+        
+//       &:active, &:focus
+//         color:
+//         background: none
+//         background-color:
+//         border:
