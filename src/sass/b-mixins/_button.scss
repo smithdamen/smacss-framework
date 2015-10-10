@@ -4,7 +4,7 @@
 //  example:
 //
 //  .box-btn {
-//    @include button(100%, center);
+//    @include button(100%);
 //    color: blue;
 //    background-color: white;
 //    border: 2px solid blue;
@@ -13,7 +13,7 @@
 //
 //  Button
 
-@mixin button($width, $position) {
+@mixin button($width) {
   display: inline-block;
   line-height: normal;
   vertical-align: middle;
@@ -29,10 +29,10 @@
   box-sizing: border-box;
   $margin: 2%;
   margin: $margin;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   width: $width - ($margin * 2);
   font-family: inherit;
   font-size: 100%;
   text-decoration: none;
-  text-align: $position;
+  text-transform: uppercase;
 }

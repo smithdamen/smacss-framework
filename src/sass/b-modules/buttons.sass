@@ -1,13 +1,16 @@
 .box-btn, a.box-btn, button
+  +button(auto)
   
   &.full-width
-    +button(100%, center)
+    +button(100%)
   
   &.left
-    +button(50%, left)
+    +button(50%)
+    float: left
     
   &.right
-    +button(50%, right)
+    +button(50%)
+    float: right
   
   &:disabled
     cursor: not-allowed
@@ -16,9 +19,7 @@
     -moz-opacity: 0.40
     
   &.btn-primary, &a.btn-primary
-    // color: $primary-color
-    // background-color: $light-color
-    // border: 1px solid $primary-color
+    
     &.light
       color: $btn-primary-light-text
       background: none
@@ -55,45 +56,43 @@
         background-color: $btn-primary-dark-active-bg
         border: $btn-primary-dark-active-border
     
-//   &.btn-secondary, &a.btn-secondary
-//     // color: $accent-color
-//     // background-color: $light-color
-//     // border: 1px solid $accent-color
-//     &.light
-//       color:
-//       background: none
-//       background-color:
-//       border:
+  &.btn-secondary, &a.btn-secondary
+
+    &.light
+      color: $btn-secondary-light-text
+      background: none
+      background-color: $btn-secondary-light-bg
+      border: $btn-secondary-light-border
       
-//       &:hover
-//         color:
-//         background: none
-//         background-color:
-//         border:
+      &:hover
+        color: $btn-secondary-light-hover-text
+        background: none
+        background-color: $btn-secondary-light-hover-bg
+        border: $btn-secondary-light-hover-border
         
-//       &:active, &:focus
-//         color:
-//         background: none
-//         background-color:
-//         border:
+      &:active, &:focus
+        color: $btn-secondary-light-active-text
+        background: none
+        background-color: $btn-secondary-light-active-bg
+        border: $btn-secondary-light-active-border
     
-//     &.dark
-//       color:
-//       background: none
-//       background-color:
-//       border:
+    &.dark
+      color: $btn-secondary-dark-text
+      background: none
+      background-color: $btn-secondary-dark-bg
+      border: $btn-secondary-dark-border
       
-//       &:hover
-//         color:
-//         background: none
-//         background-color:
-//         border:
+      &:hover
+        color: $btn-secondary-dark-hover-text
+        background: none
+        background-color: $btn-secondary-dark-hover-bg
+        border: $btn-secondary-dark-hover-border
         
-//       &:active, &:focus
-//         color:
-//         background: none
-//         background-color:
-//         border:
+      &:active, &:focus
+        color: $btn-secondary-dark-active-text
+        background: none
+        background-color: $btn-secondary-dark-active-bg
+        border: $btn-secondary-dark-active-border
 
 // &.btn-alert, &a.btn-alert
 //     // color: $accent-color

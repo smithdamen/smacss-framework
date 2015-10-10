@@ -1,0 +1,32 @@
+.btn-group
+  width: 96%
+  text-align: center
+  display: table
+  margin: 2%
+  
+  ul
+    width: 100%
+    margin: 0
+    padding: 0
+    display: table-row
+  
+    li
+      display: table-cell
+      
+      .box-btn
+        width: 100%
+        margin-right: 0
+        margin-left: 0
+        font-size: 14px
+        border-right: none !important
+  
+      &:first-child
+        .box-btn
+          +border-radius($btn-border-radius 0 0 $btn-border-radius)
+          margin-left: 2%
+    
+      &:last-child
+        .box-btn
+          border-right: $btn-default-border !important
+          +border-radius(0 $btn-border-radius $btn-border-radius 0)
+          margin-right: 2%
