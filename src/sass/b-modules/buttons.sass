@@ -1,5 +1,6 @@
 .box-btn, a.box-btn, button
   +button(auto)
+  +border-radius($btn-border-radius)
   
   &.full-width
     +button(100%)
@@ -12,7 +13,7 @@
     +button(50%)
     float: right
   
-  &:disabled
+  &:disabled, &.disabled
     cursor: not-allowed
     opacity: 0.40
     -khtml-opacity: 0.40
