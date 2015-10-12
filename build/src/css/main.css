@@ -1521,6 +1521,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  padding: 0.5em;
   border: none;
   background-color: #ffffff; }
   .box:before, .box:after {
