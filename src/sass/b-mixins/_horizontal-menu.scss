@@ -11,7 +11,7 @@
 //  horizontal menu
 
 @mixin horizontal-menu {
-  nav, .navigation {
+  .navigation {
     @include clearfix;
     width: 100%;
     border-radius: 0;

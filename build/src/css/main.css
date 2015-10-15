@@ -1404,17 +1404,17 @@ h1, h2, h3, h4, h5, h6, p {
   background: #ffffff;
   width: 100%;
   display: inline-block; }
-  .navigation nav, .navigation .navigation {
+  .navigation .navigation {
     width: 100%;
     border-radius: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     vertical-align: middle; }
-    .navigation nav:before, .navigation nav:after, .navigation .navigation:before, .navigation .navigation:after {
+    .navigation .navigation:before, .navigation .navigation:after {
       content: " ";
       display: table; }
-    .navigation nav:after, .navigation .navigation:after {
+    .navigation .navigation:after {
       clear: both; }
   .navigation ul, .navigation .nav-menu ul, .navigation ul.nav-menu {
     list-style: none;
@@ -1521,7 +1521,6 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  padding: 0.5em;
   border: none;
   background-color: #ffffff; }
   .box:before, .box:after {
@@ -1530,11 +1529,17 @@ h1, h2, h3, h4, h5, h6, p {
   .box:after {
     clear: both; }
   .box h1, .box h2, .box h3, .box h4, .box h5, .box h6 {
-    color: #212121; }
+    color: #212121;
+    padding: 0.5em; }
   .box p {
-    color: #727272; }
+    color: #727272;
+    padding: 0.5em; }
   .box i {
-    color: #33658a; }
+    color: #33658a;
+    height: 50px;
+    display: block;
+    padding: 0.5em;
+    margin: 0 auto; }
   .box img {
     width: 100%;
     height: auto;
