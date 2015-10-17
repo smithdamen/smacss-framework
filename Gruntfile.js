@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     sass: {
       build: {
         files: {
-          "build/src/css/main.css": "src/sass/main.scss"
+          "build/src/css/main.css": "src/sass/box-framework.scss"
         }
       }
     },

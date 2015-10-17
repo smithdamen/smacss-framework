@@ -12,7 +12,11 @@
 //
 //  general properties
 
-[class*='col-'] {
+[class*='col-'],
+[class*='xs'],
+[class*='sm'],
+[class*='md'],
+[class*='lg'],  {
   float: left;
   min-height: 1px;
 }

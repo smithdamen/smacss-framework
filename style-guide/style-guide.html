@@ -40,6 +40,9 @@
       article {
         overflow: hidden;
       }
+      .grid-item .box {
+        background-color: pink;
+      }
     </style>
     
   </head>
@@ -108,7 +111,6 @@
       </section>
       
       <section class="container">
-        
         <div class="col-7">
           <article class="box">
             <hgroup class="box-title">
@@ -129,14 +131,14 @@
                  <fieldset>
                    <legend>This is a form</legend>
                    
-                   <label for="name">Name: </label>
-                   <input type="text" id="name" placeholder="Name">
+                   <label class="col-2" for="name">Name: </label>
+                   <input class="form-input col-10" type="text" id="name" placeholder="Name">
                    
-                   <label for="email">Email: </label>
-                   <input type="email" id="email" placeholder="email">
+                   <label class="col-2" for="email">Email: </label>
+                   <input class="form-input col-10" type="email" id="email" placeholder="email">
                    
-                   <label for="age">Age: </label>
-                   <select id="age">
+                   <label class="col-2" for="age">Age: </label>
+                   <select class="form-select col-10" id="age">
                      <option>Under 18</option>
                      <option>18-24</option>
                      <option>25-34</option>
@@ -144,7 +146,7 @@
                      <option>Over 50</option>
                    </select>
                    
-                   <label for="sign-up">
+                   <label class="col-12" for="sign-up">
                      <input type="checkbox" id="sign-up"> Sign up
                    </label>
                    
@@ -184,66 +186,56 @@
       </section>
       
       <section class="grid-container">
-        
-        <!-- Grid Container -->
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
+            <h3>Header Text</h3>
+            <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
+          </article>
+        </a>
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
         </a>
         
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
         </a>
         
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
         </a>
         
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
         </a>
         
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
         </a>
         
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
         </a>
         
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
-            <h3>Header Text</h3>
-            <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
-          </article>
-        </a>
-        
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
-            <h3>Header Text</h3>
-            <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
-          </article>
-        </a>
-        
-        <a class="grid item" href="#">
-          <article class="box lg-3 md-6 sm-6 xs-12">
+        <a class="grid-item lg-3 md-6 sm-6 xs-12" href="#">
+          <article class="box">
             <h3>Header Text</h3>
             <p>Street art organic heirloom, listicle Vice locavore put a bird on it vinyl Etsy 90's proident sint typewriter.</p>
           </article>
